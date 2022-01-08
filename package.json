@@ -1,6 +1,6 @@
 {
   "name": "trst-proc-tester",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Package for testing Trustack Procedures.",
   "main": "./main.js",
   "bin": {
