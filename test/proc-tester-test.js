@@ -2,6 +2,7 @@ const describe = require('mocha').describe,
     it = require('mocha').it,
     expect = require('chai').expect;
 const { testProc } = require('../main');
+const path = require('path');
 
 let args = {
     i: 'test/input.json',
@@ -20,7 +21,7 @@ describe('Can run Procedure', function () {
 
         let inputFile = args.i;
         let secretFile = args.s;
-        let procPath = `${args.p}/mock_index.js`;
+        let procPath = path.join(args.p, "index.js");
 
         let resultsStr = await testProc(inputFile, secretFile, procPath);
         let results = JSON.parse(resultsStr);

@@ -1,4 +1,3 @@
-//main.js
 const fs = require('fs');
 const path = require('path');
 const { NodeVM, VMScript } = require('vm2');
@@ -31,7 +30,7 @@ async function fileExists(filename) {
  * @param {string} procPath Path to the Procedure root folder. Procedure entry must be `index.js`.
  * @returns {Promise} Promise wrapped output from the procedure.
  */
-async function testProc(inputFile, secretFile, procPath) {
+async function procTester(inputFile, secretFile, procPath) {
     return new Promise(async (resolve, reject) => {
         // Step 1: Package/Secret inputs
         if (await fileExists(inputFile)) {
@@ -76,4 +75,4 @@ async function testProc(inputFile, secretFile, procPath) {
     });
 }
 
-module.exports = { testProc }
+module.exports = { testProc: procTester }

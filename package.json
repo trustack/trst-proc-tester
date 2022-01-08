@@ -2,7 +2,10 @@
   "name": "trst-proc-tester",
   "version": "1.0.0",
   "description": "Package for testing Trustack Procedures.",
-  "main": "index.js",
+  "main": "./main.js",
+  "bin": {
+    "trst-proc-tester": "./index.js"
+  },
   "homepage": "https://trustack.io",
   "repository": {
     "type": "git",
