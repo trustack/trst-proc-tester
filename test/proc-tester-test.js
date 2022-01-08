@@ -22,7 +22,7 @@ describe('Can run Procedure', function () {
         let secretFile = args.s;
         let procPath = `${args.p}/mock_index.js`;
 
-        let resultsStr = await testProc(inputfile, secretFile, procPath);
+        let resultsStr = await testProc(inputFile, secretFile, procPath);
         let results = JSON.parse(resultsStr);
         // input.json - {"test":"test_value"}
         // secrets.json - {"secret":"test"}
