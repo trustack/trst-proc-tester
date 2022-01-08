@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Package for testing Trustack Procedures.",
   "main": "index.js",
+  "homepage": "https://trustack.io",,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trustack/trst-proc-tester"
+  },
   "scripts": {
     "test": "mocha"
   },
