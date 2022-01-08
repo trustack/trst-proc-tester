@@ -54,8 +54,8 @@ Examples:
  ```
  *Example Usage:*
  ```javascript
- const { procTest } = require('trst-proc-tester');
- let output = await procTest(inputFile, secretFile, procPath);
+ const { procTester } = require('trst-proc-tester');
+ let output = await procTester(inputFile, secretFile, procPath);
  ```
  
 ### Procedure Development
